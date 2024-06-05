@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+.AES-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AES-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.AES-input-field {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.AES-input-field label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.AES-input-field input[type="text"], .Stegno-Embedded_text input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AES-button,.Stego-button {
+  background-color: #3cc43e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.AES-button:hover, .Stego-button:hover {
+  background-color: #3e8e41;
+}
+
+.AES-encrypted-text,
+.AES-decrypted-text, .Stegno-Embedded_text {
+  margin-top: 20px;
+}
+
+.AES-encrypted-text label,
+.AES-decrypted-text label {
+  font-weight: bold;
+}
+
+.AES-encrypted-text input[type="text"],
+.AES-decrypted-text input[type="text"], .AES-extracted-message input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.decryption{
+  margin-top: 20px;
+}
+
+
+/* #image{
+  width: 50%;
+  height: 50%;
+}
+.stegoImage-div{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+} */
+img{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.Stego-button{
+  margin-top: 20px;
 }
